@@ -78,10 +78,8 @@ body {
     font-weight: 500;
 }
 
-.container .calculator .clear {
-    grid-column: span 2;
+.container .calculator .clear { 
     background: red;
-    width: 150px;
 }
 
 .container .calculator .plus {
