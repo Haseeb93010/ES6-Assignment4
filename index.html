@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculator</title>
+    <!-- toastify css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -33,17 +35,20 @@
             <span class="num equal" onclick="handleCalculate()">=</span>
         </form>
     </div>
-    <script src="js/script.js"></script>
-<!-- vanilla tilt js file -->
+    <!-- vanilla tilt js file -->
     <script type="text/javascript" src="js/vanilla-tilt.js"></script>
-<script type="text/javascript">
-	VanillaTilt.init(document.querySelector(".container"), {
-		max: 25,
-		speed: 400,
-        glare: true,
-        "max-glare":0.2,
-	});
-</script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".container"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.2,
+        });
+        </script>
+        <!-- tostify js link -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <!-- custom js link -->
+        <script src="js/script.js"></script>
 </body>
 
 </html>

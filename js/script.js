@@ -6,7 +6,19 @@ function handleValue(val){
 function handleCalculate(){
     let value = document.getElementById("inputText").value;
     if(!value){
-        alert('please type a number');
+        Toastify({
+            text: "Please Insert The Number.",
+            duration: 3000,
+            newWindow: true,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "right", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+              background: "linear-gradient(to right, #292d2e, #abb4b9)",
+            },
+            onClick: function(){} // Callback after click
+          }).showToast();
         return;
     }
     let equation = eval(value);
